@@ -26,6 +26,7 @@ Flow of Script:
 NOTES:
     1. If you want to download multiple songs simultaneously you can use ThreadPoolExecutor of concurrent.futures and specify the max_workers (number of threads allowed to execute at a time)
     2. Two different techniques has been used for waiting until a file has been downloaded (one for headless -- CLI version and one for GUI version) as there is no method available in selenium to detect and wait until a file has been downloaded
+        
         GUI method: the script opens download page of chrome in new tab and looks for the progress of the latest file that is currently downloading or downloaded after every 1 second. (you can reduce time if you want to)
 
         CLI method: the script checks that if there is any file that is currently downloading after every 1 second. If no then it closes the drivers. (you can reduce time if you want to)
