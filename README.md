@@ -15,7 +15,8 @@ Before running the script please set the value of path by to the directory where
 NOTE: the path you enter must exists beforehand and the timeOut is in seconds.
 
 Flow of Script:
-    1. Run the script
+
+    1. Run the script    
     2. Enter name of the artist
     3. Wait while script fetches list of artists found on the website
     4. Select the artist whose songs you want to download
@@ -24,6 +25,7 @@ Flow of Script:
     7. After fetching list of songs the script will start downloading the songs one by one
 
 NOTES:
+
     1. If you want to download multiple songs simultaneously you can use ThreadPoolExecutor of concurrent.futures and specify the max_workers (number of threads allowed to execute at a time)
     2. Two different techniques has been used for waiting until a file has been downloaded (one for headless -- CLI version and one for GUI version) as there is no method available in selenium to detect and wait until a file has been downloaded
         
